@@ -1,154 +1,26 @@
-/* S5 Assignment - Summary Page by Ashish */
-
-/* ========== RESET & BASE ========== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f4f7f6;
-  color: #333;
-  line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* ========== HEADER ========== */
-header {
-  background: linear-gradient(135deg, #1e2a3a, #2e4159);
-  color: #fff;
-  text-align: center;
-  padding: 60px 20px;
-  border-bottom: 4px solid #c9a227;
-}
-
-header h1 {
-  font-family: Georgia, serif;
-  font-size: 2.8rem;
-  margin-bottom: 15px;
+/* Template specific text styles */
+.course-title {
+  text-transform: uppercase;
   letter-spacing: 2px;
-}
-
-.intro {
-  max-width: 700px;
-  margin: 0 auto;
-  font-size: 1.1rem;
-  color: #d1d5db;
-}
-
-/* ========== MAIN CONTENT ========== */
-main {
-  flex: 1;
-  max-width: 1100px;
-  margin: 40px auto;
-  padding: 0 20px;
-  width: 100%;
-}
-
-section {
-  margin-bottom: 50px;
-}
-
-section h2 {
-  font-family: Georgia, serif;
-  font-size: 2rem;
-  color: #1e2a3a;
-  margin-bottom: 25px;
-  border-bottom: 2px solid #e5e7eb;
-  padding-bottom: 10px;
-}
-
-/* ========== CSS GRID CARD LAYOUT ========== */
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-}
-
-/* ========== CARD STYLING ========== */
-.card {
-  background: #fff;
-  border-radius: 10px;
-  padding: 25px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  border-top: 5px solid #c9a227;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-}
-
-.card h3 {
-  font-size: 1.3rem;
-  color: #1e2a3a;
+  font-size: 0.9rem;
+  color: #c9a227;
   margin-bottom: 10px;
 }
 
-.card p {
-  flex: 1; /* Pushes the button to the bottom */
-  font-size: 0.95rem;
-  color: #555;
+.section-desc {
+  color: #666;
   margin-bottom: 20px;
+  font-size: 0.95rem;
 }
 
-/* ========== BUTTON ========== */
-.btn {
+.card-label {
   display: inline-block;
-  text-align: center;
-  background: #1e2a3a;
-  color: #fff;
-  padding: 10px 15px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  font-size: 0.9rem;
-  margin-top: auto; /* Pushes button to bottom */
-  transition: background 0.3s ease;
-}
-
-.btn:hover {
   background: #c9a227;
   color: #1e2a3a;
-}
-
-/* ========== FOOTER ========== */
-footer {
-  background-color: #1e2a3a;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
-  margin-top: auto;
-}
-
-footer p {
-  margin: 5px 0;
-  color: #d1d5db;
-}
-
-/* ========== RESPONSIVE DESIGN (@media) ========== */
-/* Tablet */
-@media (max-width: 900px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Mobile */
-@media (max-width: 600px) {
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  header h1 {
-    font-size: 2rem;
-  }
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 3px 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  width: max-content;
 }
