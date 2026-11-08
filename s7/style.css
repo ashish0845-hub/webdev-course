@@ -1,0 +1,122 @@
+/* S7 Assignment - Ashish */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #faf6ef; color: #2b2b2b; line-height: 1.6; }
+
+/* Navigation */
+.navbar { position: sticky; top: 0; z-index: 100; background: rgba(30, 42, 58, 0.95); backdrop-filter: blur(10px); padding: 16px 30px; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #c9a227; }
+.navbar .logo { font-family: Georgia, serif; font-size: 1.3rem; color: #c9a227; letter-spacing: 2px; font-weight: bold; }
+.navbar ul { list-style: none; display: flex; gap: 28px; }
+.navbar a { color: #faf6ef; text-decoration: none; font-size: 0.95rem; letter-spacing: 1px; text-transform: uppercase; transition: color 0.3s ease; }
+.navbar a:hover { color: #c9a227; }
+
+/* Active page styling */
+.navbar a { font-weight: normal; }
+.navbar a[aria-current="page"] { font-weight: bold; color: #c9a227; border-bottom: 2px solid #c9a227; }
+
+/* Hero & Container */
+.hero { background: linear-gradient(135deg, #1e2a3a 0%, #2e4159 50%, #1e2a3a 100%); color: #faf6ef; text-align: center; padding: 100px 20px; border-bottom: 4px solid #c9a227; }
+.hero h1 { font-family: Georgia, serif; font-size: 3rem; margin-bottom: 10px; }
+.hero .subtitle { font-size: 1rem; color: #c9a227; letter-spacing: 4px; text-transform: uppercase; }
+.hero .divider { width: 60px; height: 2px; background: #c9a227; margin: 20px auto; }
+
+.container { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+.intro { text-align: center; background: #ffffff; padding: 40px; border-radius: 12px; box-shadow: 0 8px 30px rgba(30, 42, 58, 0.08); border-top: 4px solid #c9a227; margin-bottom: 40px; }
+
+h2 { font-family: Georgia, serif; font-size: 2rem; color: #1e2a3a; margin-bottom: 15px; }
+p { margin-bottom: 15px; }
+
+/* Shared Card Style */
+.card { background: #ffffff; padding: 25px; border-radius: 12px; box-shadow: 0 8px 30px rgba(30, 42, 58, 0.08); }
+
+/* Gallery Layout */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 26px; margin-top: 26px; }
+figure { background: #ffffff; padding: 12px; border-radius: 10px; box-shadow: 0 6px 20px rgba(30, 42, 58, 0.1); }
+figure img { width: 100%; height: 250px; object-fit: cover; border-radius: 6px; display: block; }
+figcaption { text-align: center; font-size: 0.9rem; color: #666; margin-top: 12px; font-style: italic; }
+.btn-gallery { display: inline-block; background: #c9a227; color: #1e2a3a; padding: 12px 28px; border-radius: 30px; text-decoration: none; font-weight: bold; transition: background 0.3s; }
+.btn-gallery:hover { background: #e0bb4a; }
+
+/* =========================================
+   S7 FORM STYLES
+   ========================================= */
+.form-card {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #1e2a3a;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #c9a227;
+  box-shadow: 0 0 5px rgba(201, 162, 39, 0.3);
+}
+
+.radio-group {
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.radio-group span {
+  font-weight: bold;
+  color: #1e2a3a;
+  margin-right: 10px;
+}
+
+.radio-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  width: 100%;
+  background: #1e2a3a;
+  color: #fff;
+  padding: 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background: #c9a227;
+  color: #1e2a3a;
+}
+
+/* Footer */
+footer { text-align: center; padding: 30px; background: #1e2a3a; color: #fff; margin-top: 50px; }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .radio-group { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
